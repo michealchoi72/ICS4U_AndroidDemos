@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.strobertchs.formprocessing.MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Smile with Similes"
+                android:id="@+id/textView2"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/problem"
+                android:id="@+id/textView"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="192dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/mtextAdjectives"
+                android:hint="Enter Adjectives (one per line)"
+                android:gravity="top" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="192dp"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/mtxtNouns"
+                android:hint="Enter Nouns (one per line)"
+                android:gravity="top" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Similate!!"
+                android:id="@+id/btnSimilate"
+                android:onClick="simClick"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/similations" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

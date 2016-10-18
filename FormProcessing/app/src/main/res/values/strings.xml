@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FormProcessing</string>
+    <string name="problem">A simile is a combination of an adjective and noun that produces
+        a phrase such as "Easy as pie" or "Cold as ice".\n\n
+    This program takes a list of adjectives and a list of nouns and outputs a list of all the possible
+    simile combinations.</string>
+</resources>
