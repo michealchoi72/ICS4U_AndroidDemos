@@ -10,8 +10,35 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="comsciclass.methodmadness.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="DisableBaselineAlignment,UselessParent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="InefficientWeight,UselessParent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="InefficientWeight,NestedWeights">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Canada is cold in winter, but some parts are colder than others. this program is very simple, you need to find the coldest city in Canada. So, when given a list of cities and their temperatures, this program will determine which city in the list has the lowest temperature and is thus the coldest."
+                    android:layout_weight="1"
+                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
