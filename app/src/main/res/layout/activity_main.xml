@@ -11,33 +11,51 @@
     tools:context="comsciclass.methodmadness.MainActivity">
 
     <LinearLayout
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:ignore="DisableBaselineAlignment,UselessParent">
+        android:layout_height="match_parent">
 
-        <LinearLayout
-            android:orientation="vertical"
+        <EditText
+            android:id="@+id/EditTextEmail"
+            android:layout_height="wrap_content"
+            android:hint="@string/feedbackemail"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+        </EditText>
+
+        <EditText
+            android:id="@+id/EditTextName"
+            android:layout_height="wrap_content"
+            android:hint="@string/feedbackname"
+            android:inputType="textPersonName"
+            android:layout_width="match_parent"
+            android:layout_weight="1">
+        </EditText>
+
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            tools:ignore="InefficientWeight,UselessParent">
+            tools:ignore="InefficientWeight,NestedWeights">
 
-            <ScrollView
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                tools:ignore="InefficientWeight,NestedWeights">
+                android:layout_height="wrap_content"
+                android:text="Canada is cold in winter, but some parts are colder than others. this program is very simple, you need to find the coldest city in Canada. So, when given a list of cities and their temperatures, this program will determine which city in the list has the lowest temperature and is thus the coldest."
+                android:textSize="10pt"
+                android:layout_weight="1">
+            </TextView>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Canada is cold in winter, but some parts are colder than others. this program is very simple, you need to find the coldest city in Canada. So, when given a list of cities and their temperatures, this program will determine which city in the list has the lowest temperature and is thus the coldest."
-                    android:layout_weight="1"
-                    tools:ignore="HardcodedText,ObsoleteLayoutParam" />
-            </ScrollView>
-
-        </LinearLayout>
+            <EditText
+                android:id="@+id/EditTextFeedbackBody"
+                android:layout_height="wrap_content"
+                android:hint="@string/feedbackbody"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:layout_width="fill_parent">
+            </EditText>
+        </ScrollView>
 
     </LinearLayout>
 

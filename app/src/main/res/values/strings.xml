@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Method Madness</string>
+    <string name="feedbacktitle" />
+    <string name="feedbackname">LUL</string>
+    <string name="feedbackemail">lol</string>
+    <string name="feedbackbody">k</string>
 </resources>
